@@ -19,6 +19,16 @@ add_theme_support('menus');
 add_theme_support('post-thumbnails');
 add_theme_support( 'woocommerce');
 
+/** post formats */
+$post_formats = array('aside','image','gallery','video','audio','link','quote','status');
+add_theme_support( 'post-formats', $post_formats);
+
+/** automatic feed link*/
+add_theme_support( 'automatic-feed-links' );
+ 
+/** tag-title **/
+add_theme_support( 'title-tag' );
+
 //Register menus
 register_nav_menus([
   'top-menu' => 'Top Menu'
